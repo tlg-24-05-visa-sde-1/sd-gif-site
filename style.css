@@ -23,7 +23,7 @@ body {
 }
 
 .gif-container {
-  max-width: 800px;
+  max-width: 1000px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -37,6 +37,6 @@ body {
 }
 
 .gif-img {
-  max-width: 208px;
-  max-height: 208px;
+  width: 215px;
+  height: 215px;
 }
