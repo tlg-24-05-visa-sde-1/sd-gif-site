@@ -1,0 +1,31 @@
+.search-bar {
+  text-align: center;
+  padding: 50px;
+  margin: 30px;
+}
+
+.btn-categories {
+  text-align: center;
+  padding: 50px;
+  margin: 20px;
+}
+
+.btn {
+  background-color: #003153;
+  color: #ffffff;
+}
+
+.gif-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.gif-img {
+  max-width: 208px;
+  max-height: 208px;
+}
