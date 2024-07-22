@@ -4,6 +4,9 @@ import { createGif } from "./js-modules/create-gif.js";
 import { displayCategory } from "./js-modules/display-category.js";
 import { clearContainer } from "./js-modules/clear-container.js";
 
+// global variables
+const searchInput = document.querySelector("#gifCategory");
+
 // display trending gifs
 fetchData("trending", createGif);
 
@@ -28,4 +31,10 @@ document.querySelector(".search-bar").addEventListener("click", (event) => {
     // display only that category of gifs
     displayCategory(category, clearContainer, fetchData, createGif);
   }
+});
+
+// add event listener to search bar input field
+searchInput.addEventListener("input", (event) => {
+  const searchResult = event.target.value;
+  displayCategory(searchResult, clearContainer, fetchData, createGif);
 });
