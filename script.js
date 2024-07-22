@@ -21,7 +21,7 @@ document.querySelector(".btn-categories").addEventListener("click", (event) => {
   }
 });
 
-// add event listener to search bar submit button
+/*// add event listener to search bar submit button
 document.querySelector(".search-bar").addEventListener("click", (event) => {
   event.preventDefault();
   // if submit button was clicked
@@ -31,7 +31,7 @@ document.querySelector(".search-bar").addEventListener("click", (event) => {
     // display only that category of gifs
     displayCategory(category, clearContainer, fetchData, createGif);
   }
-});
+});*/
 
 // add event listener to search bar input field
 searchInput.addEventListener("input", (event) => {
