@@ -13,7 +13,19 @@ document.querySelector(".btn-categories").addEventListener("click", (event) => {
   if (event.target.classList.contains("btn")) {
     // collect category
     let category = event.target.textContent.toLowerCase();
-    // display only electronics products
+    // display only that category of gifs
+    displayCategory(category, clearContainer, fetchData, createGif);
+  }
+});
+
+// add event listener to search bar submit button
+document.querySelector(".search-bar").addEventListener("click", (event) => {
+  event.preventDefault();
+  // if submit button was clicked
+  if (event.target.classList.contains("search-btn")) {
+    // collect category
+    let category = document.getElementById("gifCategory").value.toLowerCase();
+    // display only that category of gifs
     displayCategory(category, clearContainer, fetchData, createGif);
   }
 });
